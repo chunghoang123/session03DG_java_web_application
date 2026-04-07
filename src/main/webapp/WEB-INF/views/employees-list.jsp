@@ -1,4 +1,4 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jstl/core" %>
+<%@ taglib prefix="c" uri="jakarta.tags.core" %>
 <%--
   Created by IntelliJ IDEA.
   User: chung
@@ -25,7 +25,12 @@
         </tr>
     </thead>
 <c:forEach var="employee" items="${employees}">
-
+    <tr>
+        <td>${employee.id}</td>
+        <td>${employee.fullname}</td>
+        <td>${employee.department}</td>
+        <td>${employee.salary}</td>
+    </tr>
 </c:forEach>
 </table>
 

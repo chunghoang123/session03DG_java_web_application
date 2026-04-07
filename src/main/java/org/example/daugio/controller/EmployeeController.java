@@ -24,6 +24,7 @@ public class EmployeeController {
 
 
 
+        model.addAttribute("employees", employees);
         return "employees-list";
     }
 
